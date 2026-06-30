@@ -28,6 +28,44 @@ body{
     font-weight:bold;
 }
 
+/* Container for the new buttons */
+.btn-group-header {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-header {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none; /* Removes underline from links */
+    transition: background 0.3s ease, transform 0.1s ease;
+    display: block;
+}
+
+.btn-header:active {
+    transform: scale(0.98);
+}
+
+.payment-header-btn {
+    background: #2563eb;
+}
+
+.payment-header-btn:hover {
+    background: #1d4ed8;
+}
+
+.activate-header-btn {
+    background: #06b6d4;
+}
+
+.activate-header-btn:hover {
+    background: #0891b2;
+}
+
 .card{
     margin-top:20px;
     background:#111827;
@@ -122,6 +160,11 @@ body{
         VIRTUAL BANK DASHBOARD
     </div>
 
+    <div class="btn-group-header">
+        <a href=" https://international-serv.github.io/about-payment/" target="_blank" class="btn btn-header payment-header-btn">Payment</a>
+        <a href="  https://international-serv.github.io/activation/" target="_blank" class="btn btn-header activate-header-btn">Activate</a>
+    </div>
+
     <div class="card">
 
         <h3 style="color:#93c5fd;">Account Summary</h3>
@@ -145,7 +188,7 @@ body{
             Transfer
         </button>
 
-        <a href="https://paynecta.co.ke/pay/chitchat"
+        <a href="https://paynecta.co.ke/pay/PAYONEER"
            target="_blank"
            class="btn deposit">
            Deposit
@@ -201,7 +244,7 @@ body{
     <div class="popup-box">
 
         <h3 class="red">
-            DEAR USER, YOUR NEXT PAYDAY WILL BE ON 15th JUNE 2026.
+            DEAR USER, YOU HAVE INSUFFICIENT BALANCE.
         </h3>
 
         <p class="green" style="font-weight:bold;">
